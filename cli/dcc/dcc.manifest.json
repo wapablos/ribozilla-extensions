@@ -1,0 +1,124 @@
+{
+  "name": "DCC - single strand",
+  "version": "2.7.9a",
+  "commands": [
+    {
+      "name": "DCC",
+      "id": "dcc-single-strand-dcc-0",
+      "category": "Other",
+      "params": [
+        {
+          "type": "arg",
+          "signature": "@samplesheet",
+          "label": "Samplesheet",
+          "places": -1,
+          "inputs": [
+            {
+              "type": "file"
+            }
+          ],
+          "isRequired": "main/in",
+          "description": "No description",
+          "lastValues": [],
+          "separator": [
+            " ",
+            " "
+          ]
+        },
+        {
+          "type": "flag",
+          "signature": "-mt1",
+          "label": "Mate 1",
+          "places": 1,
+          "inputs": [
+            {
+              "type": "file"
+            }
+          ],
+          "isRequired": "main/in",
+          "description": "No description",
+          "lastValues": [],
+          "separator": [
+            " ",
+            " "
+          ]
+        },
+        {
+          "type": "flag",
+          "signature": "-D",
+          "label": "Detect circRNA",
+          "places": 0,
+          "inputs": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "isRequired": "opt/param",
+          "description": "No description",
+          "lastValues": [],
+          "separator": [
+            " ",
+            " "
+          ]
+        },
+        {
+          "type": "flag",
+          "signature": "-M",
+          "label": "Filter Mitochondrial Candidates",
+          "places": 0,
+          "inputs": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "isRequired": "opt/param",
+          "description": "No description",
+          "lastValues": [],
+          "separator": [
+            " ",
+            " "
+          ]
+        },
+        {
+          "type": "flag",
+          "signature": "-R",
+          "label": "Repeats Annotations",
+          "places": -1,
+          "inputs": [
+            {
+              "type": "file"
+            }
+          ],
+          "isRequired": "main/in",
+          "description": "No description",
+          "lastValues": [],
+          "separator": [
+            " ",
+            " "
+          ]
+        },
+        {
+          "type": "flag",
+          "signature": "-Nr",
+          "label": "Replicates (min,max)",
+          "places": 2,
+          "inputs": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "isRequired": "opt/param",
+          "description": "No description",
+          "lastValues": [],
+          "separator": [
+            " ",
+            " "
+          ]
+        }
+      ]
+    }
+  ]
+}

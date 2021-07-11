@@ -1,0 +1,127 @@
+{
+  "name": "STAR",
+  "version": "2.7.9a",
+  "commands": [
+    {
+      "name": "STAR",
+      "id": "star-star-0",
+      "category": "Genome Index",
+      "params": [
+        {
+          "type": "flag",
+          "signature": "--runThreadN",
+          "label": "Threads",
+          "places": 1,
+          "inputs": [
+            {
+              "type": "number"
+            }
+          ],
+          "isRequired": "opt/param",
+          "description": "No description",
+          "lastValues": [],
+          "separator": [
+            " ",
+            " "
+          ]
+        },
+        {
+          "type": "flag",
+          "signature": "--runMode",
+          "label": "Task mode",
+          "places": 0,
+          "inputs": [
+            {
+              "type": "enum",
+              "values": [
+                "genomeGenerate"
+              ]
+            }
+          ],
+          "isRequired": "opt/param",
+          "description": "No description",
+          "lastValues": [],
+          "separator": [
+            " ",
+            " "
+          ]
+        },
+        {
+          "type": "flag",
+          "signature": "--genomeDir",
+          "label": "Genome Index",
+          "places": -1,
+          "inputs": [
+            {
+              "type": "dir"
+            }
+          ],
+          "isRequired": "main/out",
+          "description": "No description",
+          "lastValues": [],
+          "separator": [
+            " ",
+            " "
+          ]
+        },
+        {
+          "type": "flag",
+          "signature": "--genomeFastaFiles",
+          "label": "Read files",
+          "places": -1,
+          "inputs": [
+            {
+              "type": "file"
+            }
+          ],
+          "isRequired": "main/in",
+          "description": "No description",
+          "lastValues": [],
+          "separator": [
+            " ",
+            " "
+          ]
+        },
+        {
+          "type": "flag",
+          "signature": "--sjdbGTFfile",
+          "label": "Annotation",
+          "places": 1,
+          "inputs": [
+            {
+              "type": "file"
+            }
+          ],
+          "isRequired": "main/in",
+          "description": "No description",
+          "lastValues": [],
+          "separator": [
+            " ",
+            " "
+          ]
+        },
+        {
+          "type": "arg",
+          "signature": "--sjdbOverhang",
+          "label": "Read Length",
+          "places": 1,
+          "inputs": [
+            {
+              "type": "number",
+              "values": [
+                "99"
+              ]
+            }
+          ],
+          "isRequired": "main/out",
+          "description": "No description",
+          "lastValues": [],
+          "separator": [
+            " ",
+            " "
+          ]
+        }
+      ]
+    }
+  ]
+}
